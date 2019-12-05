@@ -42,7 +42,7 @@ def crawler(start, agent=None, depth=1, base=None, base_filter=None):
             except requests.exceptions.HTTPError:
                 raise ValueError # converts HTTP errors to ValueErrors
     
-        soup = BeautifulSoup(html.text) #create soup
+        soup = BeautifulSoup(html.text, features='lxml') #create soup
         return get_hrefs(soup), soup #return tuple with links and soup
 
     if base_filter == True: base_filter = start #if true, use start url as base
