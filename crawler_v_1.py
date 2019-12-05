@@ -98,7 +98,7 @@ def crawler(start, agent=None, depth=1, base=None, base_filter=None):
 #url = 'https://theizo.com/'
 #url = 'https://en.wikipedia.org/wiki/'
 #agent = {'Name': 'Theis Eizo', 
-         'Mail': 'theizo.bedsted@gmail.com'}
+#         'Mail': 'theizo.bedsted@gmail.com'}
 #res = crawler(url, agent, 2, None, True)
 
 #from pprint import pprint
